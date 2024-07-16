@@ -109,5 +109,5 @@ The dynamic pricing engine ensures that product prices are competitive and align
 
 **Step 1: Clone the Repository**
 ```bash
-git clone https://github.com/your_username/ecommerce-platform.git
-cd ecommerce-platform
+git clone https://github.com/Gyan1985/dynamic_pricing.git
+cd dynamic_pricing
