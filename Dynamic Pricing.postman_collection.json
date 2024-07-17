@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "1820b11e-216e-4ad8-943a-74ce9ae94566",
+		"name": "Dynamic Pricing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31033063",
+		"_collection_link": "https://grey-firefly-249495.postman.co/workspace/My-Workspace~e7228535-bf71-4e6f-887d-dde2716a04fb/collection/31033063-1820b11e-216e-4ad8-943a-74ce9ae94566?action=share&source=collection_link&creator=31033063"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "product import",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/products/import"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/orders/66950111fd7e8c635ed2a906?state=placed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"66950111fd7e8c635ed2a906"
+					],
+					"query": [
+						{
+							"key": "state",
+							"value": "placed"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"state\": \"in_progress\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/carts"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": [{\n        \"product_id\": \"669679c05333220f9dcde9fa\",\n        \"qty\": \"1\"\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/carts/6697b6fe769e069726cd6e77/add_items"
+			},
+			"response": []
+		}
+	]
+}

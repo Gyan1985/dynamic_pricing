@@ -99,6 +99,9 @@ The dynamic pricing engine ensures that product prices are competitive and align
      }' http://localhost:3000/orders/:id
      ```
 
+**Postman collection**
+Json file Dynamic Pricing.postman_collection.json is the file for the postman collection to have a look of the api's
+
 **Setting Up and Running the Application Locally**
 
 **Prerequisites**
